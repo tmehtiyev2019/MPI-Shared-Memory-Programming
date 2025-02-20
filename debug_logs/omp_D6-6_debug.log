@@ -1,0 +1,10 @@
+Reading sparse matrix from file (comparison_matrices/D6-6/D6-6.mtx): done
+
+file=comparison_matrices/D6-6/D6-6.mtx rows=120576 cols=23740 nonzeros=146880
+	Performing 800 iterations
+Result vector y (first 5 elements):
+y[0] = 0.000000
+y[1] = 0.000000
+y[2] = 0.000000
+y[3] = 0.000000
+y[4] = 0.000000

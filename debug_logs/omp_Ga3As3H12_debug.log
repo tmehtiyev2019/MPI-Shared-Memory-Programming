@@ -1,0 +1,10 @@
+Reading sparse matrix from file (comparison_matrices/Ga3As3H12.mtx): done
+
+file=comparison_matrices/Ga3As3H12.mtx rows=61349 cols=61349 nonzeros=5970947
+	Performing 800 iterations
+Result vector y (first 5 elements):
+y[0] = -910.257263
+y[1] = 203.549759
+y[2] = 2860.192383
+y[3] = 996.333252
+y[4] = -558.483704

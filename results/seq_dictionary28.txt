@@ -1,0 +1,5 @@
+
+file=comparison_matrices/dictionary28/dictionary28.mtx rows=52652 cols=52652 nonzeros=178076
+	Performing 800 iterations
+	benchmarking COO-SpMV:   0.3128 ms (  1.14 GFLOP/s  10.1 GB/s)
+Result vector y:

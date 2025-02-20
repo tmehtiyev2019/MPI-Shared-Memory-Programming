@@ -1,0 +1,5 @@
+
+file=comparison_matrices/Ga3As3H12.mtx rows=61349 cols=61349 nonzeros=5970947
+	Performing 800 iterations
+	benchmarking COO-SpMV:  20.7645 ms (  0.58 GFLOP/s   4.6 GB/s)
+Result vector y:

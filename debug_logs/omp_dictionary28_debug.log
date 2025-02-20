@@ -1,0 +1,10 @@
+Reading sparse matrix from file (comparison_matrices/dictionary28/dictionary28.mtx): done
+
+file=comparison_matrices/dictionary28/dictionary28.mtx rows=52652 cols=52652 nonzeros=178076
+	Performing 800 iterations
+Result vector y (first 5 elements):
+y[0] = 0.000000
+y[1] = -5.927430
+y[2] = -24.568300
+y[3] = 0.000000
+y[4] = 264.208466

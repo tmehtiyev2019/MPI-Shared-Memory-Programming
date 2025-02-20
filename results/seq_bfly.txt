@@ -1,0 +1,5 @@
+
+file=comparison_matrices/bfly/bfly.mtx rows=49152 cols=49152 nonzeros=196608
+	Performing 800 iterations
+	benchmarking COO-SpMV:   0.1801 ms (  2.18 GFLOP/s  19.6 GB/s)
+Result vector y:

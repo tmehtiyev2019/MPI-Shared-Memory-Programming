@@ -1,0 +1,10 @@
+Reading sparse matrix from file (comparison_matrices/pkustk14.mtx): done
+
+file=comparison_matrices/pkustk14.mtx rows=151926 cols=151926 nonzeros=14836504
+	Performing 500 iterations
+Result vector y (first 5 elements):
+y[0] = 697.268311
+y[1] = 497.553345
+y[2] = 3565.838135
+y[3] = 1487.884888
+y[4] = 722.764526

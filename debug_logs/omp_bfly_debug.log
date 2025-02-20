@@ -1,0 +1,10 @@
+Reading sparse matrix from file (comparison_matrices/bfly/bfly.mtx): done
+
+file=comparison_matrices/bfly/bfly.mtx rows=49152 cols=49152 nonzeros=196608
+	Performing 800 iterations
+Result vector y (first 5 elements):
+y[0] = -331.637177
+y[1] = 345.917755
+y[2] = -79.443077
+y[3] = 119.298935
+y[4] = 21.633455
