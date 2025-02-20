@@ -1,5 +1,5 @@
 
 file=comparison_matrices/roadNet-CA.mtx rows=1971281 cols=1971281 nonzeros=5533214
 	Performing 800 iterations
-	benchmarking COO-SpMV:   7.1196 ms (  1.55 GFLOP/s  14.6 GB/s)
+	benchmarking COO-SpMV:   6.9980 ms (  1.58 GFLOP/s  14.9 GB/s)
 Result vector y:

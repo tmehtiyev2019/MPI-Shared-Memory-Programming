@@ -1,5 +1,5 @@
 
 file=comparison_matrices/pkustk14.mtx rows=151926 cols=151926 nonzeros=14836504
 	Performing 800 iterations
-	benchmarking COO-SpMV:  51.8395 ms (  0.57 GFLOP/s   4.6 GB/s)
+	benchmarking COO-SpMV:  51.8476 ms (  0.57 GFLOP/s   4.6 GB/s)
 Result vector y:

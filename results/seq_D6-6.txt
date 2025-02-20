@@ -1,5 +1,5 @@
 
 file=comparison_matrices/D6-6/D6-6.mtx rows=120576 cols=23740 nonzeros=146880
 	Performing 800 iterations
-	benchmarking COO-SpMV:   0.1370 ms (  2.14 GFLOP/s  20.1 GB/s)
+	benchmarking COO-SpMV:   0.1362 ms (  2.16 GFLOP/s  20.2 GB/s)
 Result vector y:

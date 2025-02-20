@@ -1,2 +1,2 @@
-Total Execution Time: 0.659845 ms per iteration
-Performance: 16.771251 GFLOP/s, 157.996276 GB/s
+Total Execution Time: 0.656741 ms per iteration
+Performance: 16.850530 GFLOP/s, 158.743139 GB/s
