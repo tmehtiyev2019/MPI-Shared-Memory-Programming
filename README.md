@@ -1,1 +1,0 @@
-# MPI-Shared-Memory-Programming
