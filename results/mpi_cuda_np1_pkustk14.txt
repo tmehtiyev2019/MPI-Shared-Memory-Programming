@@ -1,0 +1,8 @@
+
+file=comparison_matrices/pkustk14.mtx rows=151926 cols=151926 nonzeros=14836504
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+Distributing work: 14836504 nonzeros across 1 processes
+	Performing 800 iterations
+	benchmarking MPI+CUDA COO-SpMV:   3.4112 ms (  8.70 GFLOP/s  52.5 GB/s)
+Result vector y:

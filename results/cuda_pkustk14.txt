@@ -1,0 +1,6 @@
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+file=comparison_matrices/pkustk14.mtx rows=151926 cols=151926 nonzeros=14836504
+	Performing 800 iterations
+	benchmarking CUDA COO-SpMV:   2.1600 ms ( 13.74 GFLOP/s  83.0 GB/s)
+Result vector y:

@@ -1,0 +1,8 @@
+
+file=comparison_matrices/dictionary28/dictionary28.mtx rows=52652 cols=52652 nonzeros=178076
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+Distributing work: 178076 nonzeros across 8 processes
+	Performing 800 iterations
+	benchmarking MPI+CUDA COO-SpMV:   0.4092 ms (  0.87 GFLOP/s   6.3 GB/s)
+Result vector y:

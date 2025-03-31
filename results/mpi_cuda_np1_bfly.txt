@@ -1,0 +1,8 @@
+
+file=comparison_matrices/bfly/bfly.mtx rows=49152 cols=49152 nonzeros=196608
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+Distributing work: 196608 nonzeros across 1 processes
+	Performing 800 iterations
+	benchmarking MPI+CUDA COO-SpMV:   0.7737 ms (  0.51 GFLOP/s   3.6 GB/s)
+Result vector y:

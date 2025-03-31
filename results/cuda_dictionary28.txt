@@ -1,0 +1,6 @@
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+file=comparison_matrices/dictionary28/dictionary28.mtx rows=52652 cols=52652 nonzeros=178076
+	Performing 800 iterations
+	benchmarking CUDA COO-SpMV:   0.0119 ms ( 29.86 GFLOP/s 214.5 GB/s)
+Result vector y:

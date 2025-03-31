@@ -1,0 +1,8 @@
+
+file=comparison_matrices/roadNet-CA.mtx rows=1971281 cols=1971281 nonzeros=5533214
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+Distributing work: 5533214 nonzeros across 1 processes
+	Performing 800 iterations
+	benchmarking MPI+CUDA COO-SpMV:   2.4625 ms (  4.49 GFLOP/s  33.4 GB/s)
+Result vector y:

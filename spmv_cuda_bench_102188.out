@@ -1,0 +1,195 @@
+[2025-03-30 20:51:05] Setting up CUDA environment...
+[2025-03-30 20:51:18] Compiling CUDA and MPI+CUDA SpMV implementations...
+make: 'spmv-cuda' is up to date.
+make: 'spmv-mpi-cuda' is up to date.
+[2025-03-30 20:51:18] Starting CUDA tests...
+[2025-03-30 20:51:19] Running CUDA on D6-6...
+Found benchmark line in results/cuda_D6-6.txt:
+	benchmarking CUDA COO-SpMV:   1.2802 ms (  0.23 GFLOP/s   1.8 GB/s)
+Extracted: time=1.2802, gflops=0.23, gbytes=1.8
+[2025-03-30 20:51:22] Completed CUDA on D6-6.
+[2025-03-30 20:51:22] Running CUDA on dictionary28...
+Found benchmark line in results/cuda_dictionary28.txt:
+	benchmarking CUDA COO-SpMV:   1.4156 ms (  0.25 GFLOP/s   1.8 GB/s)
+Extracted: time=1.4156, gflops=0.25, gbytes=1.8
+[2025-03-30 20:51:25] Completed CUDA on dictionary28.
+[2025-03-30 20:51:25] Running CUDA on Ga3As3H12...
+Found benchmark line in results/cuda_Ga3As3H12.txt:
+	benchmarking CUDA COO-SpMV:   2.7062 ms (  4.41 GFLOP/s  26.7 GB/s)
+Extracted: time=2.7062, gflops=4.41, gbytes=26.7
+[2025-03-30 20:51:36] Completed CUDA on Ga3As3H12.
+[2025-03-30 20:51:36] Running CUDA on bfly...
+Found benchmark line in results/cuda_bfly.txt:
+	benchmarking CUDA COO-SpMV:   0.3345 ms (  1.18 GFLOP/s   8.2 GB/s)
+Extracted: time=0.3345, gflops=1.18, gbytes=8.2
+[2025-03-30 20:51:39] Completed CUDA on bfly.
+[2025-03-30 20:51:39] Running CUDA on pkustk14...
+Found benchmark line in results/cuda_pkustk14.txt:
+	benchmarking CUDA COO-SpMV:   3.4200 ms (  8.68 GFLOP/s  52.4 GB/s)
+Extracted: time=3.4200, gflops=8.68, gbytes=52.4
+[2025-03-30 20:51:51] Completed CUDA on pkustk14.
+[2025-03-30 20:51:51] Running CUDA on roadNet-CA...
+Found benchmark line in results/cuda_roadNet-CA.txt:
+	benchmarking CUDA COO-SpMV:   2.4662 ms (  4.49 GFLOP/s  33.3 GB/s)
+Extracted: time=2.4662, gflops=4.49, gbytes=33.3
+[2025-03-30 20:51:57] Completed CUDA on roadNet-CA.
+[2025-03-30 20:51:57] Detecting available GPUs...
+[2025-03-30 20:51:57] Detected 3 GPUs
+[2025-03-30 20:51:58] Starting MPI+CUDA tests...
+[2025-03-30 20:51:58] Running MPI+CUDA (np=1, gpus=3) on D6-6...
+Found benchmark line in results/mpi_cuda_np1_D6-6.txt:
+	benchmarking MPI+CUDA COO-SpMV:   1.1589 ms (  0.25 GFLOP/s   2.0 GB/s)
+Extracted: time=1.1589, gflops=0.25, gbytes=2.0
+[2025-03-30 20:52:17] Completed MPI+CUDA (np=1, gpus=3) on D6-6.
+[2025-03-30 20:52:17] Running MPI+CUDA (np=1, gpus=3) on dictionary28...
+Found benchmark line in results/mpi_cuda_np1_dictionary28.txt:
+	benchmarking MPI+CUDA COO-SpMV:   0.4274 ms (  0.83 GFLOP/s   6.0 GB/s)
+Extracted: time=0.4274, gflops=0.83, gbytes=6.0
+[2025-03-30 20:52:25] Completed MPI+CUDA (np=1, gpus=3) on dictionary28.
+[2025-03-30 20:52:26] Running MPI+CUDA (np=1, gpus=3) on Ga3As3H12...
+Found benchmark line in results/mpi_cuda_np1_Ga3As3H12.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.9702 ms (  4.02 GFLOP/s  24.3 GB/s)
+Extracted: time=2.9702, gflops=4.02, gbytes=24.3
+[2025-03-30 20:52:39] Completed MPI+CUDA (np=1, gpus=3) on Ga3As3H12.
+[2025-03-30 20:52:39] Running MPI+CUDA (np=1, gpus=3) on bfly...
+Found benchmark line in results/mpi_cuda_np1_bfly.txt:
+	benchmarking MPI+CUDA COO-SpMV:   0.7737 ms (  0.51 GFLOP/s   3.6 GB/s)
+Extracted: time=0.7737, gflops=0.51, gbytes=3.6
+[2025-03-30 20:52:49] Completed MPI+CUDA (np=1, gpus=3) on bfly.
+[2025-03-30 20:52:49] Running MPI+CUDA (np=1, gpus=3) on pkustk14...
+Found benchmark line in results/mpi_cuda_np1_pkustk14.txt:
+	benchmarking MPI+CUDA COO-SpMV:   3.4112 ms (  8.70 GFLOP/s  52.5 GB/s)
+Extracted: time=3.4112, gflops=8.70, gbytes=52.5
+[2025-03-30 20:53:01] Completed MPI+CUDA (np=1, gpus=3) on pkustk14.
+[2025-03-30 20:53:01] Running MPI+CUDA (np=1, gpus=3) on roadNet-CA...
+Found benchmark line in results/mpi_cuda_np1_roadNet-CA.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.4625 ms (  4.49 GFLOP/s  33.4 GB/s)
+Extracted: time=2.4625, gflops=4.49, gbytes=33.4
+[2025-03-30 20:53:29] Completed MPI+CUDA (np=1, gpus=3) on roadNet-CA.
+[2025-03-30 20:53:29] Running MPI+CUDA (np=2, gpus=3) on D6-6...
+Found benchmark line in results/mpi_cuda_np2_D6-6.txt:
+	benchmarking MPI+CUDA COO-SpMV:   1.1780 ms (  0.25 GFLOP/s   2.0 GB/s)
+Extracted: time=1.1780, gflops=0.25, gbytes=2.0
+[2025-03-30 20:53:48] Completed MPI+CUDA (np=2, gpus=3) on D6-6.
+[2025-03-30 20:53:48] Running MPI+CUDA (np=2, gpus=3) on dictionary28...
+Found benchmark line in results/mpi_cuda_np2_dictionary28.txt:
+	benchmarking MPI+CUDA COO-SpMV:   1.4852 ms (  0.24 GFLOP/s   1.7 GB/s)
+Extracted: time=1.4852, gflops=0.24, gbytes=1.7
+[2025-03-30 20:54:01] Completed MPI+CUDA (np=2, gpus=3) on dictionary28.
+[2025-03-30 20:54:01] Running MPI+CUDA (np=2, gpus=3) on Ga3As3H12...
+Found benchmark line in results/mpi_cuda_np2_Ga3As3H12.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.7868 ms (  4.29 GFLOP/s  25.9 GB/s)
+Extracted: time=2.7868, gflops=4.29, gbytes=25.9
+[2025-03-30 20:54:22] Completed MPI+CUDA (np=2, gpus=3) on Ga3As3H12.
+[2025-03-30 20:54:22] Running MPI+CUDA (np=2, gpus=3) on bfly...
+Found benchmark line in results/mpi_cuda_np2_bfly.txt:
+	benchmarking MPI+CUDA COO-SpMV:   1.0539 ms (  0.37 GFLOP/s   2.6 GB/s)
+Extracted: time=1.0539, gflops=0.37, gbytes=2.6
+[2025-03-30 20:54:31] Completed MPI+CUDA (np=2, gpus=3) on bfly.
+[2025-03-30 20:54:32] Running MPI+CUDA (np=2, gpus=3) on pkustk14...
+Found benchmark line in results/mpi_cuda_np2_pkustk14.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.9102 ms ( 10.20 GFLOP/s  61.6 GB/s)
+Extracted: time=2.9102, gflops=10.20, gbytes=61.6
+[2025-03-30 20:54:46] Completed MPI+CUDA (np=2, gpus=3) on pkustk14.
+[2025-03-30 20:54:46] Running MPI+CUDA (np=2, gpus=3) on roadNet-CA...
+Found benchmark line in results/mpi_cuda_np2_roadNet-CA.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.1446 ms (  5.16 GFLOP/s  38.3 GB/s)
+Extracted: time=2.1446, gflops=5.16, gbytes=38.3
+[2025-03-30 20:54:57] Completed MPI+CUDA (np=2, gpus=3) on roadNet-CA.
+[2025-03-30 20:54:57] Running MPI+CUDA (np=4, gpus=3) on D6-6...
+Found benchmark line in results/mpi_cuda_np4_D6-6.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.2991 ms (  0.13 GFLOP/s   1.0 GB/s)
+Extracted: time=2.2991, gflops=0.13, gbytes=1.0
+[2025-03-30 20:55:10] Completed MPI+CUDA (np=4, gpus=3) on D6-6.
+[2025-03-30 20:55:10] Running MPI+CUDA (np=4, gpus=3) on dictionary28...
+Found benchmark line in results/mpi_cuda_np4_dictionary28.txt:
+	benchmarking MPI+CUDA COO-SpMV:   1.9872 ms (  0.18 GFLOP/s   1.3 GB/s)
+Extracted: time=1.9872, gflops=0.18, gbytes=1.3
+[2025-03-30 20:55:27] Completed MPI+CUDA (np=4, gpus=3) on dictionary28.
+[2025-03-30 20:55:27] Running MPI+CUDA (np=4, gpus=3) on Ga3As3H12...
+Found benchmark line in results/mpi_cuda_np4_Ga3As3H12.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.4199 ms (  4.93 GFLOP/s  29.8 GB/s)
+Extracted: time=2.4199, gflops=4.93, gbytes=29.8
+[2025-03-30 20:55:40] Completed MPI+CUDA (np=4, gpus=3) on Ga3As3H12.
+[2025-03-30 20:55:40] Running MPI+CUDA (np=4, gpus=3) on bfly...
+Found benchmark line in results/mpi_cuda_np4_bfly.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.2199 ms (  0.18 GFLOP/s   1.2 GB/s)
+Extracted: time=2.2199, gflops=0.18, gbytes=1.2
+[2025-03-30 20:55:51] Completed MPI+CUDA (np=4, gpus=3) on bfly.
+[2025-03-30 20:55:51] Running MPI+CUDA (np=4, gpus=3) on pkustk14...
+Found benchmark line in results/mpi_cuda_np4_pkustk14.txt:
+	benchmarking MPI+CUDA COO-SpMV:   3.0366 ms (  9.77 GFLOP/s  59.0 GB/s)
+Extracted: time=3.0366, gflops=9.77, gbytes=59.0
+[2025-03-30 20:56:03] Completed MPI+CUDA (np=4, gpus=3) on pkustk14.
+[2025-03-30 20:56:03] Running MPI+CUDA (np=4, gpus=3) on roadNet-CA...
+Found benchmark line in results/mpi_cuda_np4_roadNet-CA.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.4215 ms (  4.57 GFLOP/s  33.9 GB/s)
+Extracted: time=2.4215, gflops=4.57, gbytes=33.9
+[2025-03-30 20:56:18] Completed MPI+CUDA (np=4, gpus=3) on roadNet-CA.
+[2025-03-30 20:56:18] Running MPI+CUDA (np=8, gpus=3) on D6-6...
+Found benchmark line in results/mpi_cuda_np8_D6-6.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.8451 ms (  0.10 GFLOP/s   0.8 GB/s)
+Extracted: time=2.8451, gflops=0.10, gbytes=0.8
+[2025-03-30 20:56:38] Completed MPI+CUDA (np=8, gpus=3) on D6-6.
+[2025-03-30 20:56:38] Running MPI+CUDA (np=8, gpus=3) on dictionary28...
+Found benchmark line in results/mpi_cuda_np8_dictionary28.txt:
+	benchmarking MPI+CUDA COO-SpMV:   3.3459 ms (  0.11 GFLOP/s   0.8 GB/s)
+Extracted: time=3.3459, gflops=0.11, gbytes=0.8
+[2025-03-30 20:56:55] Completed MPI+CUDA (np=8, gpus=3) on dictionary28.
+[2025-03-30 20:56:55] Running MPI+CUDA (np=8, gpus=3) on Ga3As3H12...
+Found benchmark line in results/mpi_cuda_np8_Ga3As3H12.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.7464 ms (  4.35 GFLOP/s  26.3 GB/s)
+Extracted: time=2.7464, gflops=4.35, gbytes=26.3
+[2025-03-30 20:57:11] Completed MPI+CUDA (np=8, gpus=3) on Ga3As3H12.
+[2025-03-30 20:57:11] Running MPI+CUDA (np=8, gpus=3) on bfly...
+Found benchmark line in results/mpi_cuda_np8_bfly.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.2433 ms (  0.18 GFLOP/s   1.2 GB/s)
+Extracted: time=2.2433, gflops=0.18, gbytes=1.2
+[2025-03-30 20:57:26] Completed MPI+CUDA (np=8, gpus=3) on bfly.
+[2025-03-30 20:57:26] Running MPI+CUDA (np=8, gpus=3) on pkustk14...
+Found benchmark line in results/mpi_cuda_np8_pkustk14.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.9100 ms ( 10.20 GFLOP/s  61.6 GB/s)
+Extracted: time=2.9100, gflops=10.20, gbytes=61.6
+[2025-03-30 20:57:50] Completed MPI+CUDA (np=8, gpus=3) on pkustk14.
+[2025-03-30 20:57:50] Running MPI+CUDA (np=8, gpus=3) on roadNet-CA...
+Found benchmark line in results/mpi_cuda_np8_roadNet-CA.txt:
+	benchmarking MPI+CUDA COO-SpMV:   2.5671 ms (  4.31 GFLOP/s  32.0 GB/s)
+Extracted: time=2.5671, gflops=4.31, gbytes=32.0
+[2025-03-30 20:58:05] Completed MPI+CUDA (np=8, gpus=3) on roadNet-CA.
+[2025-03-30 20:58:05] All tests completed. Results saved in consolidated_results_cuda_added.csv
+[2025-03-30 20:58:07] Creating combined results file with CPU and CUDA data...
+[2025-03-30 20:58:08] Converting CUDA results to match CPU results format...
+[2025-03-30 20:58:10] Combined results saved to final_results.csv
+[2025-03-30 20:58:10] Generating CUDA performance summary...
+
+CUDA Performance Summary:
+Version	Matrix	Execution Time (ms)	GFLOP/s	GB/s
+CUDA	bfly	0.0075	52.77	369.4
+CUDA	D6-6	0.0083	35.47	282.5
+CUDA	dictionary28	0.0119	29.86	214.5
+CUDA	Ga3As3H12	1.3404	8.91	53.8
+CUDA	pkustk14	2.1600	13.74	83.0
+CUDA	roadNet-CA	0.3040	36.40	270.3
+MPI+CUDA_np2-G1	bfly	0.0862	4.56	31.9
+MPI+CUDA_np2-G1	D6-6	0.0108	27.13	216.1
+MPI+CUDA_np2-G1	dictionary28	0.0123	29.05	208.6
+MPI+CUDA_np2-G1	Ga3As3H12	1.4423	8.28	50.0
+MPI+CUDA_np2-G1	pkustk14	2.2889	12.96	78.3
+MPI+CUDA_np2-G1	roadNet-CA	0.4062	27.25	202.3
+MPI+CUDA_np4-G1	D6-6	0.1439	2.04	16.3
+MPI+CUDA_np4-G3	bfly	2.2199	0.18	1.2
+MPI+CUDA_np4-G3	dictionary28	1.9872	0.18	1.3
+MPI+CUDA_np4-G3	Ga3As3H12	2.4199	4.93	29.8
+MPI+CUDA_np4-G3	pkustk14	3.0366	9.77	59.0
+MPI+CUDA_np4-G3	roadNet-CA	2.4215	4.57	33.9
+MPI+CUDA_np8-G3	bfly	2.2433	0.18	1.2
+MPI+CUDA_np8-G3	D6-6	2.8451	0.10	0.8
+MPI+CUDA_np8-G3	dictionary28	3.3459	0.11	0.8
+MPI+CUDA_np8-G3	Ga3As3H12	2.7464	4.35	26.3
+MPI+CUDA_np8-G3	pkustk14	2.9100	10.20	61.6
+MPI+CUDA_np8-G3	roadNet-CA	2.5671	4.31	32.0
+[2025-03-30 20:58:11] Installing Python dependencies for visualization...
+[2025-03-30 20:58:16] Running visualization script...
+Successfully loaded combined results with 28 entries
+[2025-03-30 20:59:10] Visualization completed. Image saved as perf-cmp-all.jpg
+[2025-03-30 20:59:10] Job completed

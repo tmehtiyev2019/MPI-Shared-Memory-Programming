@@ -1,0 +1,40 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/D6-6/D6-6.mtx): done
+[Rank 4] Using CUDA device 0 (of 1 available)
+[Rank 3] Using CUDA device 0 (of 1 available)
+[Rank 6] Using CUDA device 0 (of 1 available)
+[Rank 0] Using CUDA device 0 (of 1 available)
+[Rank 5] Using CUDA device 0 (of 1 available)
+[Rank 1] Using CUDA device 0 (of 1 available)
+[Rank 2] Using CUDA device 0 (of 1 available)
+[Rank 7] Using CUDA device 0 (of 1 available)
+[Rank 15] Using CUDA device 0 (of 1 available)
+[Rank 9] Using CUDA device 0 (of 1 available)
+[Rank 13] Using CUDA device 0 (of 1 available)
+[Rank 11] Using CUDA device 0 (of 1 available)
+[Rank 10] Using CUDA device 0 (of 1 available)
+[Rank 14] Using CUDA device 0 (of 1 available)
+[Rank 12] Using CUDA device 0 (of 1 available)
+[Rank 8] Using CUDA device 0 (of 1 available)
+[Rank 4] Processing nonzeros 36720 to 45899 (9180 elements)
+[Rank 6] Processing nonzeros 55080 to 64259 (9180 elements)
+[Rank 3] Processing nonzeros 27540 to 36719 (9180 elements)
+[Rank 0] Processing nonzeros 0 to 9179 (9180 elements)
+[Rank 1] Processing nonzeros 9180 to 18359 (9180 elements)
+[Rank 5] Processing nonzeros 45900 to 55079 (9180 elements)
+[Rank 2] Processing nonzeros 18360 to 27539 (9180 elements)
+[Rank 7] Processing nonzeros 64260 to 73439 (9180 elements)
+[Rank 10] Processing nonzeros 91800 to 100979 (9180 elements)
+[Rank 13] Processing nonzeros 119340 to 128519 (9180 elements)
+[Rank 9] Processing nonzeros 82620 to 91799 (9180 elements)
+[Rank 15] Processing nonzeros 137700 to 146879 (9180 elements)
+[Rank 11] Processing nonzeros 100980 to 110159 (9180 elements)
+[Rank 14] Processing nonzeros 128520 to 137699 (9180 elements)
+[Rank 12] Processing nonzeros 110160 to 119339 (9180 elements)
+[Rank 8] Processing nonzeros 73440 to 82619 (9180 elements)
+y[0] = 0.000000
+y[1] = 0.000000
+y[2] = 0.000000
+y[3] = 0.000000
+y[4] = 0.000000

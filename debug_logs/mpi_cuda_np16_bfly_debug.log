@@ -1,0 +1,40 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/bfly/bfly.mtx): done
+[Rank 6] Using CUDA device 0 (of 1 available)
+[Rank 5] Using CUDA device 0 (of 1 available)
+[Rank 3] Using CUDA device 0 (of 1 available)
+[Rank 10] Using CUDA device 0 (of 1 available)
+[Rank 11] Using CUDA device 0 (of 1 available)
+[Rank 9] Using CUDA device 0 (of 1 available)
+[Rank 14] Using CUDA device 0 (of 1 available)
+[Rank 13] Using CUDA device 0 (of 1 available)
+[Rank 15] Using CUDA device 0 (of 1 available)
+[Rank 7] Using CUDA device 0 (of 1 available)
+[Rank 0] Using CUDA device 0 (of 1 available)
+[Rank 4] Using CUDA device 0 (of 1 available)
+[Rank 1] Using CUDA device 0 (of 1 available)
+[Rank 2] Using CUDA device 0 (of 1 available)
+[Rank 8] Using CUDA device 0 (of 1 available)
+[Rank 12] Using CUDA device 0 (of 1 available)
+[Rank 6] Processing nonzeros 73728 to 86015 (12288 elements)
+[Rank 5] Processing nonzeros 61440 to 73727 (12288 elements)
+[Rank 3] Processing nonzeros 36864 to 49151 (12288 elements)
+[Rank 0] Processing nonzeros 0 to 12287 (12288 elements)
+[Rank 7] Processing nonzeros 86016 to 98303 (12288 elements)
+[Rank 1] Processing nonzeros 12288 to 24575 (12288 elements)
+[Rank 4] Processing nonzeros 49152 to 61439 (12288 elements)
+[Rank 2] Processing nonzeros 24576 to 36863 (12288 elements)
+[Rank 14] Processing nonzeros 172032 to 184319 (12288 elements)
+[Rank 10] Processing nonzeros 122880 to 135167 (12288 elements)
+[Rank 11] Processing nonzeros 135168 to 147455 (12288 elements)
+[Rank 9] Processing nonzeros 110592 to 122879 (12288 elements)
+[Rank 13] Processing nonzeros 159744 to 172031 (12288 elements)
+[Rank 8] Processing nonzeros 98304 to 110591 (12288 elements)
+[Rank 15] Processing nonzeros 184320 to 196607 (12288 elements)
+[Rank 12] Processing nonzeros 147456 to 159743 (12288 elements)
+y[0] = -331.637177
+y[1] = 345.917755
+y[2] = -79.443077
+y[3] = 119.298935
+y[4] = 21.633455

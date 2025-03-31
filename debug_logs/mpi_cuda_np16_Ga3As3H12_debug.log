@@ -1,0 +1,40 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/Ga3As3H12.mtx): done
+[Rank 12] Using CUDA device 0 (of 1 available)
+[Rank 8] Using CUDA device 0 (of 1 available)
+[Rank 10] Using CUDA device 0 (of 1 available)
+[Rank 9] Using CUDA device 0 (of 1 available)
+[Rank 0] Using CUDA device 0 (of 1 available)
+[Rank 4] Using CUDA device 0 (of 1 available)
+[Rank 5] Using CUDA device 0 (of 1 available)
+[Rank 1] Using CUDA device 0 (of 1 available)
+[Rank 2] Using CUDA device 0 (of 1 available)
+[Rank 6] Using CUDA device 0 (of 1 available)
+[Rank 13] Using CUDA device 0 (of 1 available)
+[Rank 11] Using CUDA device 0 (of 1 available)
+[Rank 14] Using CUDA device 0 (of 1 available)
+[Rank 3] Using CUDA device 0 (of 1 available)
+[Rank 15] Using CUDA device 0 (of 1 available)
+[Rank 7] Using CUDA device 0 (of 1 available)
+[Rank 5] Processing nonzeros 1865925 to 2239109 (373185 elements)
+[Rank 2] Processing nonzeros 746370 to 1119554 (373185 elements)
+[Rank 10] Processing nonzeros 3731850 to 4105034 (373185 elements)
+[Rank 4] Processing nonzeros 1492740 to 1865924 (373185 elements)
+[Rank 8] Processing nonzeros 2985480 to 3358664 (373185 elements)
+[Rank 1] Processing nonzeros 373185 to 746369 (373185 elements)
+[Rank 6] Processing nonzeros 2239110 to 2612294 (373185 elements)
+[Rank 0] Processing nonzeros 0 to 373184 (373185 elements)
+[Rank 3] Processing nonzeros 1119555 to 1492739 (373185 elements)
+[Rank 7] Processing nonzeros 2612295 to 2985479 (373185 elements)
+[Rank 12] Processing nonzeros 4478220 to 4851404 (373185 elements)
+[Rank 9] Processing nonzeros 3358665 to 3731849 (373185 elements)
+[Rank 13] Processing nonzeros 4851405 to 5224589 (373185 elements)
+[Rank 14] Processing nonzeros 5224590 to 5597774 (373185 elements)
+[Rank 11] Processing nonzeros 4105035 to 4478219 (373185 elements)
+[Rank 15] Processing nonzeros 5597775 to 5970946 (373172 elements)
+y[0] = -910.257263
+y[1] = 203.549744
+y[2] = 2860.192383
+y[3] = 996.333252
+y[4] = -558.483704

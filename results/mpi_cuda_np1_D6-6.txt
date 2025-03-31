@@ -1,0 +1,8 @@
+
+file=comparison_matrices/D6-6/D6-6.mtx rows=120576 cols=23740 nonzeros=146880
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+Distributing work: 146880 nonzeros across 1 processes
+	Performing 800 iterations
+	benchmarking MPI+CUDA COO-SpMV:   1.1589 ms (  0.25 GFLOP/s   2.0 GB/s)
+Result vector y:

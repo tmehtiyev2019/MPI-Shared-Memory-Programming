@@ -1,0 +1,24 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/D6-6/D6-6.mtx): done
+[Rank 0] Using CUDA device 0 (of 1 available)
+[Rank 4] Using CUDA device 0 (of 1 available)
+[Rank 2] Using CUDA device 0 (of 1 available)
+[Rank 3] Using CUDA device 0 (of 1 available)
+[Rank 5] Using CUDA device 0 (of 1 available)
+[Rank 6] Using CUDA device 0 (of 1 available)
+[Rank 7] Using CUDA device 0 (of 1 available)
+[Rank 1] Using CUDA device 0 (of 1 available)
+[Rank 6] Processing nonzeros 110160 to 128519 (18360 elements)
+[Rank 7] Processing nonzeros 128520 to 146879 (18360 elements)
+[Rank 4] Processing nonzeros 73440 to 91799 (18360 elements)
+[Rank 0] Processing nonzeros 0 to 18359 (18360 elements)
+[Rank 2] Processing nonzeros 36720 to 55079 (18360 elements)
+[Rank 5] Processing nonzeros 91800 to 110159 (18360 elements)
+[Rank 3] Processing nonzeros 55080 to 73439 (18360 elements)
+[Rank 1] Processing nonzeros 18360 to 36719 (18360 elements)
+y[0] = 0.000000
+y[1] = 0.000000
+y[2] = 0.000000
+y[3] = 0.000000
+y[4] = 0.000000

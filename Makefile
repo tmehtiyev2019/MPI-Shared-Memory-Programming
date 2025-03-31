@@ -1,48 +1,62 @@
-all: spmv spmv-mpi spmv-omp spmv-hybrid
-CC=gcc
-MPICC=mpicc
+# Compiler settings
+CC = gcc
+MPICC = mpicc
+NVCC = nvcc
 
-FLAG=-O3 -std=c99 -I./include/ -Wno-unused-result -Wno-write-strings
-LDFLAG=-O3 -lm
+# Flags
+CFLAGS = -O3 -std=c99 -I./include/ -Wno-unused-result -Wno-write-strings
+LDFLAGS = -O3 -lm
+OMPFLAGS = -fopenmp
+NVFLAGS = -O3 -std=c++11 -I./include/ -diag-suppress 177,2464
 
-# Add OpenMP flag
-OMPFLAG=-fopenmp
+# All targets
+all: spmv spmv-mpi spmv-omp spmv-hybrid spmv-cuda spmv-mpi-cuda
 
 # Object files
-OBJS=spmv.o mmio.o 
-MPI_OBJS=spmv-mpi.o mmio.o
-OMP_OBJS=spmv-omp.o mmio.o
-HYBRID_OBJS=spmv-hybrid.o mmio.o
+OBJS = mmio.o
+CPU_OBJS = $(OBJS) spmv.o
+MPI_OBJS = $(OBJS) spmv-mpi.o
+OMP_OBJS = $(OBJS) spmv-omp.o
+HYBRID_OBJS = $(OBJS) spmv-hybrid.o
 
-# Corrected implicit rule for .c -> .o
+# Pattern rules
 %.o: %.c
-	${CC} -o $@ -c ${FLAG} $<
+	$(CC) -o $@ -c $(CFLAGS) $<
 
 # Special rules for each version
 spmv-mpi.o: spmv-mpi.c
-	${MPICC} -o $@ -c ${FLAG} $<
+	$(MPICC) -o $@ -c $(CFLAGS) $<
 
 spmv-omp.o: spmv-omp.c
-	${CC} -o $@ -c ${FLAG} ${OMPFLAG} $<
+	$(CC) -o $@ -c $(CFLAGS) $(OMPFLAGS) $<
 
 spmv-hybrid.o: spmv-hybrid.c
-	${MPICC} -o $@ -c ${FLAG} ${OMPFLAG} $<   
+	$(MPICC) -o $@ -c $(CFLAGS) $(OMPFLAGS) $<
 
-# Build rules
-spmv: ${OBJS}
-	${CC} ${LDFLAG} -o $@ $^
+mmio.o: mmio.c
+	$(CC) -o $@ -c $(CFLAGS) $<
 
-spmv-mpi: ${MPI_OBJS}
-	${MPICC} ${LDFLAG} -o $@ $^
+# CPU targets
+spmv: $(CPU_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $^
 
-spmv-omp: ${OMP_OBJS}
-	${CC} ${LDFLAG} ${OMPFLAG} -o $@ $^
+spmv-mpi: $(MPI_OBJS)
+	$(MPICC) $(LDFLAGS) -o $@ $^
 
-spmv-hybrid: ${HYBRID_OBJS}
-	${MPICC} ${LDFLAG} ${OMPFLAG} -o $@ $^
+spmv-omp: $(OMP_OBJS)
+	$(CC) $(LDFLAGS) $(OMPFLAGS) -o $@ $^
 
+spmv-hybrid: $(HYBRID_OBJS)
+	$(MPICC) $(LDFLAGS) $(OMPFLAGS) -o $@ $^
+
+# CUDA targets
+spmv-cuda: spmv-cuda.cu mmio.c
+	$(NVCC) $(NVFLAGS) -x c mmio.c -x cu spmv-cuda.cu -o $@
+
+spmv-mpi-cuda: spmv-mpi-cuda.cu mmio.c
+	$(NVCC) $(NVFLAGS) -x c mmio.c -x cu spmv-mpi-cuda.cu -ccbin $(MPICC) -Xcompiler "-DMPICH_SKIP_MPICXX" -o $@ -lmpi -lstdc++
+
+# Clean up
 .PHONY: clean
-clean: 
-	rm -f *.o spmv spmv-mpi spmv-omp spmv-hybrid   # Simplified cleanup
-
-
+clean:
+	rm -f *.o spmv spmv-mpi spmv-omp spmv-hybrid spmv-cuda spmv-mpi-cuda

@@ -1,0 +1,6 @@
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+file=comparison_matrices/D6-6/D6-6.mtx rows=120576 cols=23740 nonzeros=146880
+	Performing 800 iterations
+	benchmarking CUDA COO-SpMV:   0.0083 ms ( 35.47 GFLOP/s 282.5 GB/s)
+Result vector y:

@@ -1,0 +1,6 @@
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+file=comparison_matrices/Ga3As3H12.mtx rows=61349 cols=61349 nonzeros=5970947
+	Performing 800 iterations
+	benchmarking CUDA COO-SpMV:   1.3404 ms (  8.91 GFLOP/s  53.8 GB/s)
+Result vector y:

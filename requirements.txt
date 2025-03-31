@@ -1,3 +1,5 @@
-pandas>=1.1.5
-matplotlib>=3.3.0
-numpy>=1.19.0
+matplotlib==3.2.2 --only-binary=:all:
+pandas==1.1.5 --only-binary=:all:
+seaborn==0.11.2 --only-binary=:all:
+numpy==1.19.5 --only-binary=:all:
+scipy==1.5.4 --only-binary=:all:

@@ -1,0 +1,8 @@
+
+file=comparison_matrices/Ga3As3H12.mtx rows=61349 cols=61349 nonzeros=5970947
+First few matrix values: -0.265286 0.317169 -0.808220 0.739931
+
+Distributing work: 5970947 nonzeros across 2 processes
+	Performing 800 iterations
+	benchmarking MPI+CUDA COO-SpMV:   1.4423 ms (  8.28 GFLOP/s  50.0 GB/s)
+Result vector y:

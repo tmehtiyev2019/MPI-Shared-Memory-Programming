@@ -1,0 +1,40 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/dictionary28/dictionary28.mtx): done
+[Rank 0] Using CUDA device 0 (of 1 available)
+[Rank 2] Using CUDA device 0 (of 1 available)
+[Rank 1] Using CUDA device 0 (of 1 available)
+[Rank 6] Using CUDA device 0 (of 1 available)
+[Rank 3] Using CUDA device 0 (of 1 available)
+[Rank 9] Using CUDA device 0 (of 1 available)
+[Rank 11] Using CUDA device 0 (of 1 available)
+[Rank 10] Using CUDA device 0 (of 1 available)
+[Rank 14] Using CUDA device 0 (of 1 available)
+[Rank 15] Using CUDA device 0 (of 1 available)
+[Rank 7] Using CUDA device 0 (of 1 available)
+[Rank 5] Using CUDA device 0 (of 1 available)
+[Rank 12] Using CUDA device 0 (of 1 available)
+[Rank 4] Using CUDA device 0 (of 1 available)
+[Rank 8] Using CUDA device 0 (of 1 available)
+[Rank 13] Using CUDA device 0 (of 1 available)
+[Rank 1] Processing nonzeros 11130 to 22259 (11130 elements)
+[Rank 6] Processing nonzeros 66780 to 77909 (11130 elements)
+[Rank 0] Processing nonzeros 0 to 11129 (11130 elements)
+[Rank 2] Processing nonzeros 22260 to 33389 (11130 elements)
+[Rank 3] Processing nonzeros 33390 to 44519 (11130 elements)
+[Rank 7] Processing nonzeros 77910 to 89039 (11130 elements)
+[Rank 4] Processing nonzeros 44520 to 55649 (11130 elements)
+[Rank 5] Processing nonzeros 55650 to 66779 (11130 elements)
+[Rank 9] Processing nonzeros 100170 to 111299 (11130 elements)
+[Rank 10] Processing nonzeros 111300 to 122429 (11130 elements)
+[Rank 11] Processing nonzeros 122430 to 133559 (11130 elements)
+[Rank 14] Processing nonzeros 155820 to 166949 (11130 elements)
+[Rank 8] Processing nonzeros 89040 to 100169 (11130 elements)
+[Rank 15] Processing nonzeros 166950 to 178075 (11126 elements)
+[Rank 12] Processing nonzeros 133560 to 144689 (11130 elements)
+[Rank 13] Processing nonzeros 144690 to 155819 (11130 elements)
+y[0] = 0.000000
+y[1] = -5.927430
+y[2] = -24.568300
+y[3] = 0.000000
+y[4] = 264.208466

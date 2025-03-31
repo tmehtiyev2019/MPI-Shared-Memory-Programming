@@ -1,0 +1,24 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/bfly/bfly.mtx): done
+[Rank 7] Using CUDA device 0 (of 1 available)
+[Rank 4] Using CUDA device 0 (of 1 available)
+[Rank 3] Using CUDA device 0 (of 1 available)
+[Rank 0] Using CUDA device 0 (of 1 available)
+[Rank 5] Using CUDA device 0 (of 1 available)
+[Rank 1] Using CUDA device 0 (of 1 available)
+[Rank 6] Using CUDA device 0 (of 1 available)
+[Rank 2] Using CUDA device 0 (of 1 available)
+[Rank 7] Processing nonzeros 172032 to 196607 (24576 elements)
+[Rank 4] Processing nonzeros 98304 to 122879 (24576 elements)
+[Rank 0] Processing nonzeros 0 to 24575 (24576 elements)
+[Rank 3] Processing nonzeros 73728 to 98303 (24576 elements)
+[Rank 6] Processing nonzeros 147456 to 172031 (24576 elements)
+[Rank 1] Processing nonzeros 24576 to 49151 (24576 elements)
+[Rank 2] Processing nonzeros 49152 to 73727 (24576 elements)
+[Rank 5] Processing nonzeros 122880 to 147455 (24576 elements)
+y[0] = -331.637177
+y[1] = 345.917755
+y[2] = -79.443077
+y[3] = 119.298935
+y[4] = 21.633455

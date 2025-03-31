@@ -1,0 +1,10 @@
+Usage: mpirun -n <processes> ./spmv-mpi-cuda [my_matrix.mtx]
+Note: my_matrix.mtx must be real-valued sparse matrix in the MatrixMarket file format.
+Reading sparse matrix from file (comparison_matrices/Ga3As3H12.mtx): done
+[Rank 0] Using CUDA device 0 (of 3 available)
+[Rank 0] Processing nonzeros 0 to 5970946 (5970947 elements)
+y[0] = -910.257263
+y[1] = 203.549713
+y[2] = 2860.192383
+y[3] = 996.333191
+y[4] = -558.483704
